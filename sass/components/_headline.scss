@@ -1,0 +1,26 @@
+.headline-background {
+  background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+    url(../images/main-header-background.jpg);
+  background-size: cover;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.headline-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  width: 696px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.huge-button--headline {
+  margin: auto;
+}

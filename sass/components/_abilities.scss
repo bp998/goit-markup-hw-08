@@ -1,0 +1,23 @@
+.abilities {
+  padding-top: 94px;
+}
+
+.abilities-box {
+  background-color: var(--button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.abilities-box__icon {
+  display: block;
+}
+
+.abilities-headline {
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.abilities-text {
+  line-height: 1.71;
+  color: var(--link-color);
+}

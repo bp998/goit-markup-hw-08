@@ -1,0 +1,19 @@
+.customer {
+  color: var(--border-grey);
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+
+  &:hover {
+    color: var(--brand-color);
+  }
+}
+
+.customer-icon {
+  fill: currentColor;
+  cursor: pointer;
+}
