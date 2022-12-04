@@ -1,27 +1,65 @@
 .headline-background {
   background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-    url(../images/main-header-background.jpg);
+    url(/images/Header-s-1x.png);
   background-size: cover;
   background-position: center;
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
   margin: 0 auto;
-  height: 600px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .headline-background {
+      background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+        url(/images/Header-s-2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+      url(/images/Header-m-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+        url(/images/Header-m-2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+    background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+      url(/images/Header-l-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
+        url(/images/Header-l-2x.png);
+    }
+  }
 }
 
 .headline-text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  width: 360px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  width: 696px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
 .huge-button--headline {
   margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .headline-text {
+    width: 696px;
+    line-height: 1.36;
+    font-weight: 900;
+    font-size: 44px;
+  }
 }
