@@ -18,7 +18,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" type="button" data-modal-close>
-          <svg height="11" width="11">
+          <svg height="18" width="18">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
@@ -94,11 +94,77 @@
     <header class="header-border">
       <!-- Mobile menu -->
       <div class="mobile-menu d-none">
-        <button type="button" class="toggle-menu">x</button>
+        <div class="close-menu">
+          <button class="close-menu__icon">
+            <svg height="40" width="40">
+              <use href="./images/icons.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-container">
+          <nav>
+            <ul class="mobile-nav">
+              <li class="mobile-nav__list">
+                <a class="mobile-nav__link mobile-nav__link--active" href="#"
+                  >Agencja</a
+                >
+              </li>
+              <li class="mobile-nav__list">
+                <a class="mobile-nav__link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-nav__list">
+                <a class="mobile-nav__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-flex">
+            <ul>
+              <li class="mobile-contact--primary">
+                <a class="mobile-contact--tel" href="tel:+48111111111">
+                  +48 111 111 111</a
+                >
+              </li>
+              <li class="mobile-contact--secondary">
+                <a
+                  class="mobile-contact--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a class="mobile-social__item" href="#"></a>Instagram
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__item--elem" href="#"></a>Twitter
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__item--elem" href="#"></a>Facebook
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__item--elem" href="#"></a>Linkedin
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container header-wrapper">
+        <a class="logo" href="index.html"
+          ><span class="logo__color--primary">Web</span>Studio
+        </a>
+        <button class="toggle-menu" type="button">
+          <svg height="40" width="40">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
 
       <!-- Mobile menu end -->
-      <div class="container header-wrapper">
+      <!-- <div class="container header-wrapper">
         <a class="logo" href="index.html"
           ><span class="logo__color--primary">Web</span>Studio
         </a>
@@ -138,7 +204,7 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
     <main>
       <section class="headline-background">

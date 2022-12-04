@@ -1,9 +1,125 @@
+@media (min-width: 320px) {
+}
+.container {
+  width: 100vw;
+}
+.header-wrapper {
+  justify-content: space-between;
+  padding-block: 16px;
+}
+.nav {
+  display: none;
+}
+.header-contacts {
+  display: none;
+}
+
+.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+}
+
 .mobile-menu {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: white;
   z-index: 2;
+}
+
+.mobile-menu__overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.toggle-menu {
+  background-color: transparent;
+  padding: 0;
+}
+
+.close-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  padding-inline: 15px;
+  &__icon {
+    background-color: transparent;
+    padding: 0;
+    &:hover {
+      fill: var(--brand-color);
+    }
+  }
+}
+
+.mobile-nav {
+  &__list {
+    margin-bottom: 32px;
+  }
+  display: flex;
+  flex-direction: column;
+  &__link {
+    color: inherit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    &--active {
+      color: var(--brand-color);
+    }
+  }
+}
+.mobile-contact {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  &--primary {
+    margin-bottom: 32px;
+  }
+  &--secondary {
+    margin-bottom: 64px;
+  }
+  &--tel {
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--brand-color);
+  }
+  &--mail {
+    color: var(--link-color);
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.mobile-container {
+  margin-bottom: 48px;
+  margin-left: 40px;
+  height: 100vh;
+}
+.mobile-flex {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mobile-social {
+  display: flex;
+  align-items: center;
+  &__item {
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    &--elem {
+      padding-inline: 10px;
+      &::after {
+        content: "";
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
+    }
+  }
 }
