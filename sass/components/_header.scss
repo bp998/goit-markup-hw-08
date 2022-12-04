@@ -5,7 +5,7 @@
 .header-wrapper {
   display: flex;
   align-items: center;
-  padding-block: 24px;
+  padding-block: 19px;
 }
 
 .nav {
@@ -34,6 +34,7 @@
 
 .nav__link-button--active {
   position: relative;
+
   &::after {
     content: "";
     width: 100%;
@@ -43,17 +44,23 @@
     left: 0px;
     top: 46px;
     border-radius: 2px;
-  }
-  &:hover,
-  &:focus {
-    color: var(--brand-color);
+
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+    }
   }
 }
 
 .header-contacts {
   display: flex;
-  gap: 50px;
   margin-left: auto;
+  flex-direction: column;
+  gap: 10px;
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+    flex-direction: row;
+  }
 }
 
 .header-contacts__link {

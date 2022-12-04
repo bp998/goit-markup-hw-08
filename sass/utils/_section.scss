@@ -1,3 +1,6 @@
 .section {
-  padding-block: 94px;
+  padding-block: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-block: 94px;
+  }
 }

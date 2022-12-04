@@ -93,6 +93,7 @@
     </div>
     <header class="header-border">
       <!-- Mobile menu -->
+
       <div class="mobile-menu d-none">
         <div class="close-menu-absolute">
           <div class="close-menu">
@@ -224,10 +225,10 @@
           </button>
         </div>
       </section>
-      <!-- <section>
+      <section>
         <div class="container">
           <ul class="abilities wrapper">
-            <li>
+            <li class="abilities__container">
               <div class="abilities-box">
                 <svg class="abilities-box__icon" height="70" width="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -239,7 +240,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="abilities__container">
               <div class="abilities-box">
                 <svg class="abilities-box__icon" height="70" width="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
@@ -251,7 +252,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="abilities__container">
               <div class="abilities-box">
                 <svg class="abilities-box__icon" height="70" width="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -263,7 +264,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="abilities__container">
               <div class="abilities-box">
                 <svg class="abilities-box__icon" height="70" width="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -313,177 +314,285 @@
         <div class="container section">
           <h2 class="section-headline">Nasz zespół</h2>
           <ul class="wrapper">
-            <li>
-              <figure class="team">
-                <img
-                  src="./images/product-designer.jpg"
-                  alt="John Doe Product Designer"
-                  height="260"
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team1-l-1x.jpg 1x,
+                    ./images/team1-l-2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <figcaption>
-                  <h4 class="team__member-name">John Doe</h4>
-                  <p class="team__member-position">Product Designer</p>
-                </figcaption>
-                <ul class="wrapper-social">
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </figure>
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team1-m-1x.jpg 1x,
+                    ./images/team1-m-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team1-s-1x.jpg 1x,
+                    ./images/team1-s-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team"
+                  src="./images/team1-s-1x.jpg"
+                  alt="Product designer"
+                />
+              </picture>
+              <div>
+                <h4 class="team__member-name">John Doe</h4>
+                <p class="team__member-position">Product Designer</p>
+              </div>
+              <ul class="wrapper-social wrapper-social--main">
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <figure class="team">
-                <img
-                  src="./images/frontend-developer.jpg"
-                  alt="John Doe Frontend Developer"
-                  height="260"
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team2-l-1x.jpg 1x,
+                    ./images/team2-l-2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <figcaption>
-                  <h4 class="team__member-name">John Doe</h4>
-                  <p class="team__member-position">Frontend Developer</p>
-                </figcaption>
-                <ul class="wrapper-social">
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </figure>
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team2-m-1x.jpg 1x,
+                    ./images/team2-m-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team2-s-1x.jpg 1x,
+                    ./images/team2-s-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team"
+                  src="./images/team2-s-1x.jpg"
+                  alt="Frontend Developer"
+                />
+              </picture>
+              <div>
+                <h4 class="team__member-name">John Doe</h4>
+                <p class="team__member-position">Frontend Developer</p>
+              </div>
+              <ul class="wrapper-social wrapper-social--main">
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <figure class="team">
-                <img
-                  src="./images/marketing-specialist.jpg"
-                  alt="John Doe Marketing"
-                  height="260"
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team3-l-1x.jpg 1x,
+                    ./images/team3-l-2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <figcaption>
-                  <h4 class="team__member-name">John Doe</h4>
-                  <p class="team__member-position">Marketing</p>
-                </figcaption>
-                <ul class="wrapper-social">
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </figure>
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team3-m-1x.jpg 1x,
+                    ./images/team3-m-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team3-s-1x.jpg 1x,
+                    ./images/team3-s-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team"
+                  src="./images/team3-s-1x.jpg"
+                  alt="Marketing"
+                />
+              </picture>
+              <div>
+                <h4 class="team__member-name">John Doe</h4>
+                <p class="team__member-position">Marketing</p>
+              </div>
+              <ul class="wrapper-social wrapper-social--main">
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <figure class="team">
-                <img
-                  src="./images/ui-designer.jpg"
-                  alt="John Doe UI Designer"
-                  height="260"
+            <li class="team__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team4-l-1x.jpg 1x,
+                    ./images/team4-l-2x.jpg 2x
+                  "
+                  type="image/jpg"
                 />
-                <figcaption>
-                  <h4 class="team__member-name">John Doe</h4>
-                  <p class="team__member-position">UI Designer</p>
-                </figcaption>
-                <ul class="wrapper-social">
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon-social" href="#">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </figure>
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team4-m-1x.jpg 1x,
+                    ./images/team4-m-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team4-s-1x.jpg 1x,
+                    ./images/team4-s-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team"
+                  src="./images/team4-s-1x.jpg"
+                  alt="UI Designer"
+                />
+              </picture>
+              <div>
+                <h4 class="team__member-name">John Doe</h4>
+                <p class="team__member-position">UI Designer</p>
+              </div>
+              <ul class="wrapper-social wrapper-social--main">
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-social" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -491,7 +600,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-headline">Nasi klienci</h2>
-          <ul class="wrapper">
+          <ul class="wrapper wrapper--customer">
             <li class="customer">
               <svg class="customer-icon" width="170" height="92">
                 <use href="./images/icons.svg#icon-Client-1"></use>
@@ -528,7 +637,7 @@
     </main>
     <footer class="footer-background">
       <div class="container footer-wrapper">
-        <div>
+        <div class="footer-social footer-social--first">
           <p class="logo logo__footer">
             <span class="logo__color--primary">Web</span
             ><span class="logo__color--secondary">Studio</span>
@@ -549,7 +658,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
+        <div class="footer-social footer-social--second">
           <p class="footer-social-headline">Dołącz do nas</p>
           <ul class="wrapper-social">
             <li>
@@ -582,7 +691,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-social">
+        <div class="footer-social footer-social--last">
           <p class="footer-social-headline">Zapisz się do newslettera</p>
           <form name="newsletter_signup" autocomplete="off">
             <label class="newsletter">
@@ -603,7 +712,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

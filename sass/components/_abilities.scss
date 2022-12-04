@@ -1,20 +1,34 @@
 .abilities {
-  padding-top: 94px;
+  padding-block: 60px;
+  &__container {
+    flex-basis: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .abilities-box {
   background-color: var(--button-color);
   padding: 25px 100px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    padding: 25px 142px;
+  }
 }
 
 .abilities-box__icon {
   display: block;
+  margin: auto;
 }
 
 .abilities-headline {
+  text-align: center;
   line-height: 1.14;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .abilities-text {
