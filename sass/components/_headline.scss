@@ -1,6 +1,6 @@
 .headline-background {
   background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-    url(/images/Header-s-1x.png);
+    url(../images/Header-s-1x.png);
   background-size: cover;
   background-position: center;
   padding: 118px 0;
@@ -11,17 +11,17 @@
     (min-resolution: 2dppx) {
     .headline-background {
       background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-        url(/images/Header-s-2x.png);
+        url(../images/Header-s-2x.png);
     }
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-      url(/images/Header-m-1x.png);
+      url(../images/Header-m-1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-        url(/images/Header-m-2x.png);
+        url(../images/Header-m-2x.png);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -29,13 +29,13 @@
     margin: 0 auto;
     padding: 200px 0;
     background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-      url(/images/Header-l-1x.png);
+      url(../images/Header-l-1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
-        url(/images/Header-l-2x.png);
+        url(../images/Header-l-2x.png);
     }
   }
 }
